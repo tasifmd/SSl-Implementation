@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dummy
+    username: root
+    password: root
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+server:
+   port: 8085
+   ssl:
+      key-store: classpath:testssl.p12
+      key-store-password: tasifmd
+      key-store-type: PKCS12
+      key-alias: tasif
